@@ -12,6 +12,13 @@ const parolaUtente = prompt("Prego inserire una parola:")
 
 const parolaPalidroma = palidroma(parolaUtente)
 let risposta = ""
+//Controllo se la parola data è palidroma o no 
+
+if (parolaPalidroma) {
+    risposta = "La tua parola è palidroma"
+} else {
+    risposta = "La tua parola non è palidroma"
+}
 
 //Creo una funzione dove stabilisco se la parola è vera o falsa 
 
@@ -23,14 +30,6 @@ function palidroma(parolaUtente) {
     } else {
         return false
     }
-}
-
-//Controllo se la parola data è palidroma o no 
-
-if (parolaPalidroma) {
-    risposta = "La tua parola è palidroma"
-} else {
-    risposta = "La tua parola non è palidroma"
 }
 
 alert(risposta)
